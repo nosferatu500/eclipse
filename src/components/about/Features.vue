@@ -1,3 +1,5 @@
 <template>
-    <div>Features Section</div>
+    <section>
+        <div> Features Section </div>
+    </section>
 </template>

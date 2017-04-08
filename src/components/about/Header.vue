@@ -1,6 +1,4 @@
 <template>
-  <link rel="stylesheet" href="../../libs/font-awesome/css/font-awesome.min.css" />
-
   <header class="main_head">
 		<div class="container">
 
@@ -20,7 +18,7 @@
 						</nav>
 					</div>
 					<div class="col-sm-2">
-						<button>Join <i class="fa fa-arrow-circle-o-right"></i></button>
+						<button>Join <i><icon name="arrow-circle-o-right"></icon></i></button>
 					</div>
 				</div>
 			</div>
@@ -34,13 +32,12 @@
 
 			<div class="header_bottom">
         <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-5">
             <input type="text">
 				    <input type="text">
           </div>
-
-          <div class="col-sm-2">
-            <button> <i class="fa fa-arrow-circle-o-right"></i></button>
+          <div class="col-md-1">
+            <button> <icon name="arrow-circle-o-right"></icon></button>                        
           </div>
         </div>
 			</div>
@@ -111,24 +108,31 @@ export default {
 		padding-bottom: 15px
 		padding-left: 32px
 		font-size: 16px
+    display: inline-block
 		i
 			padding-left: 12px
 			padding-right: 17px
+      text-align: bottom
+      
+
+.header_nav_bar
+  svg
+    margin: auto
 
 .header_bottom
-  row
-    button
-      border: #a100ff
-      border-radius: 4px
-      background-color: #a100ff
-      color: #fff
-      padding-top: 15px
-      padding-bottom: 15px
-      padding-left: 32px
-      font-size: 16px
-      float: left
-      i
-        padding-left: 12px
-        padding-right: 17px
+  padding-bottom: 210px
+  button
+    border: #a100ff
+    border-radius: 4px
+    background-color: #a100ff
+    color: #fff
+    padding-top: 15px
+    padding-bottom: 15px
+    padding-left: 32px
+    font-size: 16px
+    float: left
+    icon
+      padding-left: 12px
+      padding-right: 17px
 
 </style>
