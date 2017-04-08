@@ -32,16 +32,21 @@
 
 			<div class="header_bottom">
         <div class="row">
-          <div class="col-md-5">
-            <input type="text">
-				    <input type="text">
-          </div>
-          <div class="col-md-1">
-            <button> <icon name="arrow-circle-o-right"></icon></button>                        
+          <div class="col-md-8">
+            
+            <input type="text" placeholder="Design Style">
+				    
+            <input type="text" placeholder="Email">
+
+            <button> <icon name="arrow-circle-o-right"></icon></button>                                    
+          
           </div>
         </div>
 			</div>
 		</div>
+
+    <div id="circle"><span></span><i><icon name="arrow-circle-o-down" scale="2"></icon></i></div>
+    
 	</header>
 </template>
 
@@ -58,6 +63,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="sass" scoped>
+
+@mixin placeholder()
+  input::-webkit-input-placeholder
+    @content
+  input:-moz-placeholder
+    @content
+  input::-moz-placeholder
+    @content
+  input:-ms-input-placeholder
+    @content
+
 
 .img-responsive
 	display: block
@@ -119,6 +135,11 @@ export default {
   svg
     margin: auto
 
+.type-style
+  font-size: 15px
+  font-family: sans-serif
+  letter-spacing: 1px
+
 .header_bottom
   padding-bottom: 210px
   button
@@ -130,9 +151,40 @@ export default {
     padding-bottom: 15px
     padding-left: 32px
     font-size: 16px
-    float: left
-    icon
-      padding-left: 12px
-      padding-right: 17px
+    float: right
+    position: absolute
+    height: 60px
+    width: 60px
+
+  input
+    margin: 0
+    height: 60px
+    width: 280px
+    margin-right: 20px
+    @extend .type-style
+    border: none
+    outline: none
+    padding: 18px
+    background-color: rgba(255,255,255,1)
+    border-radius: 5px
+    color: rgba(255,115,120,1)
+
+  @include placeholder()
+    color: black
+    @extend .type-style
+
+#circle 
+  width: 100px
+  height: 50px
+  background: white
+  border-radius: 50% / 100%
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+  margin: auto
+  i
+    color: #96a5b4
+    padding-left: 37px
+  span
+    padding: 120px
 
 </style>
