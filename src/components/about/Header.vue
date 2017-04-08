@@ -5,7 +5,7 @@
 			<div class="header_nav_bar">
 				<div class="row">
 					<div class="col-sm-6">
-						<img src="img/logo.png" alt="">
+						<img src="../../assets/img/logo.png" alt="">
 					</div>
 					<div class="col-sm-4 header_nav">
 						<nav>
@@ -81,7 +81,7 @@ export default {
 	height: auto
 
 .main_head
-	background-image: url(../../assets/img/background_header_1.png)
+	background-image: url(../../assets/img/about/background_header_1.png)
 	background-size: cover
 	width: 100%
 	padding-top: 70px
