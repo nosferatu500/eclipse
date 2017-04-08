@@ -5,6 +5,7 @@
     <router-view name="lastWorks"></router-view>
     <router-view name="features"></router-view>
     <router-view name="portfolio"></router-view>
+    <router-view name="banner"></router-view>
     <router-view name="footer"></router-view>
   
   </div>

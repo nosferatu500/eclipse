@@ -5,6 +5,7 @@ import Header from '@/components/about/Header'
 import LastWorks from '@/components/about/LastWorks'
 import Features from '@/components/about/Features'
 import Portfolio from '@/components/about/Portfolio'
+import Banner from '@/components/about/Banner'
 import Footer from '@/components/about/Footer'
 
 Vue.use(Router)
@@ -18,6 +19,7 @@ export default new Router({
         lastWorks: LastWorks,
         features: Features,
         portfolio: Portfolio,
+        banner: Banner,
         footer: Footer
       }
     },
