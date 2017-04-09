@@ -71,6 +71,7 @@ export default {
 		margin: 0
 		font-size: 14px
 		padding-bottom: 40px
+		color: #999da0
 
 .section_middle
 	ul

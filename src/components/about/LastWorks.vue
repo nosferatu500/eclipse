@@ -30,6 +30,7 @@
         margin: 0
         font-size: 14px
         padding-bottom: 70px
+        color: #999da0
 
 .section_bottom
     background-color: #EBEFF3

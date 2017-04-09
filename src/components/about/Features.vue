@@ -50,6 +50,7 @@
         margin: 0
         font-size: 14px
         padding-bottom: 60px
+        color: #999da0
 
 .section_bottom
     .features_item
@@ -66,6 +67,7 @@
             margin: 0
             font-size: 14px
             padding-bottom: 150px
+            color: #999da0
 
 #circle 
     width: 100px
