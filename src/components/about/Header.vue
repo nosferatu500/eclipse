@@ -52,10 +52,10 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'header',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'header'
     }
   }
 }
@@ -176,7 +176,7 @@ export default {
 #circle 
   width: 100px
   height: 50px
-  background: white
+  background: #EBEFF3
   border-radius: 50% / 100%
   border-bottom-left-radius: 0
   border-bottom-right-radius: 0
